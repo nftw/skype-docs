@@ -100,7 +100,7 @@ The following example puts the previous procedure steps together to show how to 
 ```js
 // add the IM modality
 var historyService = conversation.historyService;
-historyService.activitytItems.added(function (item) {
+historyService.activityItems.added(function (item) {
     if (item.type() == 'TextMessage') {
         if (item.direction() == 'Incoming') {
             console.log('received a text message: ', item.text());
