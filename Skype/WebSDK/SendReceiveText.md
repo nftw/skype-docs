@@ -105,7 +105,7 @@ historyService.activityItems.added(function (item) {
         if (item.direction() == 'Incoming') {
             console.log('received a text message: ', item.text());
         } else if (item.direction() == 'Outgoing') {
-            Console.log('sent a text message: ', item.text());
+            console.log('sent a text message: ', item.text());
         }
     }
 });
